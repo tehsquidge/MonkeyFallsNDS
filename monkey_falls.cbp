@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="monkey_falls" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="devkitarm" />
+		<Build>
+			<Target title="Debug">
+				<Option output="run.sh" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="devkitarm" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="/opt/devkitpro/PAlib/include/nds" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="make" />
+					<CompileFile command="make" />
+					<Clean command="make clean" />
+					<DistClean command="make" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/monkey_falls" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="devkitarm" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="source/main.cpp" />
+		<Extensions>
+			<envvars />
+			<code_completion>
+				<search_path add="/opt/devkitpro/PAlib/include/nds" />
+			</code_completion>
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,28 @@
+PAGfx Converter v0.10 -- by Mollusk -- resurrected by fincs -- forum.palib.info
+Mono version
+If you have suggestions, problems or anything please come to the PAlib forums
+
+Converting PAGfx.ini
+Transparent Color: Magenta
+
+5 sprites:
+  tukituki: 256colors, 32x32, Pal: sprites_Pal, -> tukituki_Sprite
+  monkey: 256colors, 16x48, Pal: sprites_Pal, -> monkey_Sprite
+  play: 256colors, 64x64, Pal: sprites_Pal, -> play_Sprite
+  gameover: 256colors, 64x64, Pal: sprites_Pal, -> gameover_Sprite
+  paused: 256colors, 64x128, Pal: sprites_Pal, -> paused_Sprite
+
+3 backgrounds:
+  bottom : EasyBg, 256x192, Pal: bottom_Pal, 140 tiles -> bottom_Tiles and bottom_Map
+  top : EasyBg, 256x192, Pal: top_Pal, 87 tiles -> top_Tiles and top_Map
+  title : EasyBg, 256x192, Pal: title_Pal, 180 tiles -> title_Tiles and title_Map
+
+4 palettes:
+  sprites_Pal, 255 colors
+  bottom_Pal, 241 colors
+  top_Pal, 4 colors
+  title_Pal, 8 colors
+
+Converted in 0 minutes and 0 seconds
+
+Finished!
